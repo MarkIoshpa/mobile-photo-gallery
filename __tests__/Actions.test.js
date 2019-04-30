@@ -25,4 +25,17 @@ describe('actions functionality', () => {
     expect(saveFavorite().type).toEqual('SAVE_FAVORITE')
     expect(storeFavorites().type).toEqual('STORE_FAVORITES')
   })
+
+  test('testing action data', () => {
+    expect(toggleGridView(true).data).toEqual(true)
+    expect(toggleGridView(false).data).toEqual(false)
+    expect(toggleImageDisplay(true, { id: 1, previewURL: 'store.png' }).data).toEqual({
+      id: 1,
+      previewURL: 'store.png'
+    })
+    expect(storeFavorites({ id: 1, previewURL: 'store.png' }).data).toEqual({
+      id: 1,
+      previewURL: 'store.png'
+    })
+  })
 })

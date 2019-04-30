@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/runtime": "^7.4.3",
     "babel-jest": "^24.7.1",
     "eslint": "^5.16.0",
@@ -52,6 +51,7 @@
       "email": "mark.ioshpa@gmail.com"
     }
   ],
+  "os": "Windows",
   "device": "Android",
   "deliveryDate": "04/30/2019",
   "delay": false
