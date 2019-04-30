@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --cache --format codeframe --ext .js ."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.3.3",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/runtime": "^7.4.3",
     "babel-jest": "^24.7.1",
     "eslint": "^5.16.0",
@@ -37,8 +39,20 @@
   "jest": {
     "preset": "react-native"
   },
-  "script": {
-    "lint": "eslint --cache --format codeframe --ext .js .",
-    "test": "jest"
-  }
+  "ex": "02",
+  "students": [
+    {
+      "id": "206332454",
+      "fullName": "Ahmed Abu Hussin",
+      "email": "ahm.j.1995@hotmail.com"
+    },
+    {
+      "id": "320579493",
+      "fullName": "Mark Ioshpa",
+      "email": "mark.ioshpa@gmail.com"
+    }
+  ],
+  "device": "Android",
+  "deliveryDate": "04/30/2019",
+  "delay": false
 }
